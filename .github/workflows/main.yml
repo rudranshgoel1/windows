@@ -2,7 +2,7 @@ name: Windows - RustDesk
 
 on:
   schedule:
-    - cron: "45 13 * * *"
+    - cron: "35 20 * * *"
 jobs:
   build:
     name: Start Building...
