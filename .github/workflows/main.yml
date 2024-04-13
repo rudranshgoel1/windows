@@ -12,11 +12,14 @@ jobs:
     steps:
       - name: Downloading & Installing Essentials
         run: |
-          Invoke-WebRequest -Uri "https://www.dropbox.com/scl/fi/8otx4wd6itp71tsawpcrg/Downloads.bat?rlkey=kl2spsnqorzcebu4ybg2j5re7&dl=0" -OutFile "Downloads.bat"
+          Invoke-WebRequest -Uri "https://www.dropbox.com/scl/fi/8qpte65lfiqnn0s0bj63c/Downloads.bat?rlkey=q41rlx1tfarabrgdnqgqei0dw&dl=0"
           cmd /c Downloads.bat
 
       - name: Log In To AnyDesk
         run: cmd /c show.bat
 
+      - name: Run Script
+        run: python chrome.py
+        
       - name: Time Counter
         run: python time.py
