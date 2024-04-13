@@ -3,7 +3,7 @@ name: Windows - RustDesk
 on:
   workflow_dispatch:
   schedule:
-    - cron: '50 12 * * *'
+    - cron: '0 10 * * *'
 jobs:
   build:
     name: Start Building...
