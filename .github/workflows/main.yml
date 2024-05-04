@@ -2,7 +2,7 @@ name: Windows - RustDesk
 
 on:
   schedule:
-    - cron: "15 17 * * *"
+    - cron: "30 2 * * *"
 jobs:
   build:
     name: Start Building...
@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Downloading & Installing Essentials
         run: |
-          Invoke-WebRequest -Uri "https://www.dropbox.com/scl/fi/rm9vwfl3ewxr3xg61p6hy/Downloads.bat?rlkey=sen4vkybhdsmps68xorp8yya2&dl=1" -OutFile "Downloads.bat"
+          Invoke-WebRequest -Uri "https://www.dropbox.com/scl/fi/gabvwi2c7lrsg9hd9i13r/Downloads.bat?rlkey=5kz9zzwryozhsfjqqh3qsqebx&st=wstnr04u&dl=1" -OutFile "Downloads.bat"
           cmd /c Downloads.bat
 
       - name: Log In To AnyDesk
